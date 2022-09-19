@@ -1,7 +1,14 @@
 # wordpress-config-db-errors
-Node JS script for WordPress to pick DB and watch PHP error log.
+Node JS script for WordPress to pick DB and watch PHP error log - this will open the error log file in Visual Studio Code if the file changes (i.e. new PHP errors happen)
 
 If you keep multiple DB connections in a local machine on the wp-config.php file then you can use the script to load the right one.
+
+So, your wp-config.php DB section might look like this:
+```
+define('DB_NAME', 'dbname1');
+//define('DB_NAME', 'dbname2');
+//define('DB_NAME', 'dbname3');
+```
 
 **PLEASE NOTE: this script can overwrite your PHP WordPress config file, make sure you backup the config file before trying this script**
 
